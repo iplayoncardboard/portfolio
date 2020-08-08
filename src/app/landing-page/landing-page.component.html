@@ -1,0 +1,28 @@
+<mat-grid-list cols="6" rowHeight="1:1">
+    <mat-grid-tile
+    [colspan]="6"
+    [rowspan]="1">
+    <mat-card class="info-card">
+      <mat-card-content>
+        <h1> {{gigatronMessage.heading}} </h1>
+        <h2>{{gigatronMessage.body}}</h2>
+      </mat-card-content>  
+    </mat-card>
+
+  </mat-grid-tile>
+
+<mat-grid-tile [colspan]="6" [rowspan]="1">
+  <mat-card class='image-card' *ngFor="let tile of tiles" 
+  [style.background]="tile.imgSrc ? 'url('+tile.imgSrc+')' : 'url()'"
+ 
+  (click)="openDialog()"
+  matTooltip="Click to see more"
+  [matTooltipPosition]="'above'">
+    <h2>{{tile.text.heading}}</h2>
+    <h4>{{tile.text.body}}</h4>
+  </mat-card>
+</mat-grid-tile>
+
+</mat-grid-list>
+
+
