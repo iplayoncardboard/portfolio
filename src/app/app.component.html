@@ -2,7 +2,7 @@
 <app-nav (toggleContact)="toggleContactTray()"></app-nav>
 <mat-drawer-container class="page-container">
     <mat-drawer mode="side">
-        <app-connect></app-connect>
+        <app-connect (closeContact)="toggleContactTray()"></app-connect>
     </mat-drawer>
       <router-outlet></router-outlet> 
 </mat-drawer-container>

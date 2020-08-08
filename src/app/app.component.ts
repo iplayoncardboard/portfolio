@@ -9,7 +9,6 @@ import { MatDrawer } from '@angular/material/sidenav';
 export class AppComponent {
   @ViewChild(MatDrawer)
   private matDrawerComponent: MatDrawer;
-  onToggleTray: EventEmitter<any> = new EventEmitter();
 
   toggleContactTray(){
     this.matDrawerComponent.toggle();
