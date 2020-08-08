@@ -9,7 +9,11 @@
     background-color: white;
   }
 
-/*   
+  .drawer {
+    /* min-width: 25%; */
+  }
+
+
   .mat-drawer-side{
     border: none;
-} */
+} 

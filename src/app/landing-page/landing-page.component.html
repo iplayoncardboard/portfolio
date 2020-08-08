@@ -14,7 +14,6 @@
 <mat-grid-tile [colspan]="6" [rowspan]="1">
   <mat-card class='image-card' *ngFor="let tile of tiles" 
   [style.background]="tile.imgSrc ? 'url('+tile.imgSrc+')' : 'url()'"
- 
   (click)="openDialog()"
   matTooltip="Click to see more"
   [matTooltipPosition]="'above'">

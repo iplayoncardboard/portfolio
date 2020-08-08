@@ -1,6 +1,7 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { TileCard  } from '../interfaces';
 import { MatDrawer } from '@angular/material/sidenav';
+import { contactData } from './data';
 
 @Component({
   selector: 'app-connect',
@@ -8,13 +9,15 @@ import { MatDrawer } from '@angular/material/sidenav';
   styleUrls: ['./connect.component.css']
 })
 export class ConnectComponent implements OnInit    {
-  @Output()closeContact: EventEmitter<any> = new EventEmitter();
+
+  contacts = contactData;
 
   constructor() { }
-  ngOnInit(): void {}
+  @Output()closeContact: EventEmitter<any> = new EventEmitter();
 
+contactArray;
+  ngOnInit(): void {}
   toggleContactTray(event){
-    console.log('toggleClicked');
     this.closeContact.emit(event);
   }
 }

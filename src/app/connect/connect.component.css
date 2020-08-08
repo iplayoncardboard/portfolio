@@ -9,3 +9,10 @@
     flex-direction: row;
     justify-content: flex-end;
 }
+
+.close-button{
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: rgba(216, 217, 219, 0.733);
+    border: none;
+}

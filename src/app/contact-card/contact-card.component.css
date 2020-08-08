@@ -1,8 +1,15 @@
-.icon{
+.contact-card-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-card-container>.icon{
     max-width: 4rem;
     max-height: 4rem;
 }
 
-.close-button{
-    width: 100%;
+.contact-card-container>.title{
+    margin: auto;
+    font-size: 2rem;
+    font-weight: 700;
 }
