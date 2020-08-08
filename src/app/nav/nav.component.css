@@ -1,0 +1,7 @@
+.connect-button{
+    height:80%;
+    font:inherit;
+    padding: 0 12px;
+    /* font-family: 500 20px/32px Roboto, "Helvetica Neue", sans-serif; */
+  border: 1px solid lightgray;
+}

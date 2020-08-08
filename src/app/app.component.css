@@ -1,5 +1,6 @@
 .container {
     /* padding: 0rem 10%; */
+    height: 100%;
 }
 
 .page-container {
@@ -7,6 +8,7 @@
     height: 300px;
     border: 1px solid rgba(0, 0, 0, 0.5); */
     background-color: white;
+    height: 100%;
   }
 
   .drawer {
