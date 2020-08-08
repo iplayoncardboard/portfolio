@@ -9,7 +9,12 @@
 }
 
 .contact-card-container>.title{
-    margin: auto;
+    margin: auto .25rem;
     font-size: 2rem;
     font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;  
 }

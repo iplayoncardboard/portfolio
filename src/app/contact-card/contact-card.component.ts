@@ -7,9 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ContactCardComponent implements OnInit {
   @Input()cardData;
+  title: string;
   constructor() { }
 
   ngOnInit(): void {
+    this.title = this.cardData.title.toUpperCase();
   }
 
 }
