@@ -1,8 +1,8 @@
 <mat-toolbar>
-    <span>{{title}}</span>
+    <span class="title">{{title}}</span>
     <mat-button-toggle-group #group="matButtonToggleGroup">
-      <mat-button-toggle color="primary" checked="true" routerLink="" routerLinkActive="active">Home</mat-button-toggle>
-      <mat-button-toggle color="primary" routerLink="dev" routerLinkActive="active">Work</mat-button-toggle>
+      <mat-button-toggle color="primary" class="toggle-button" checked="true" routerLink="" routerLinkActive="active">Home</mat-button-toggle>
+      <mat-button-toggle color="primary" class="toggle-button" routerLink="dev" routerLinkActive="active">Work</mat-button-toggle>
     </mat-button-toggle-group>
     <button mat-button class="connect-button" (click)="contactToggle($event)">
       Connect
