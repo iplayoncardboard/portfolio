@@ -4,17 +4,33 @@
     align-items: center;
 }
 
+.card {
+    width: 50%;
+}
+
 .info-card {
-   /* margin-top: 60px; */
    margin: 30px auto;
    text-align: center;
 }
+
+.info-card p { 
+    font-size: 1.25rem;
+}
+
+.image-card {
+    margin: 30px auto;
+    text-align: center;
+ }
 
 .image-card h2 {
     font-weight: 600;
     text-align: center;
 }
 
-.info-card p { 
+.image-card p { 
     font-size: 1.25rem;
 }
+
+a {
+    text-decoration: none;
+  }

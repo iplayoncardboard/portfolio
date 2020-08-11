@@ -1,19 +1,37 @@
 
 <div class="lp-container"> 
-  <mat-card class="info-card">
+  <mat-card class="card info-card">
     <mat-card-content>
       <h1> {{gigatronMessage.heading}} </h1>
-      <h2>{{gigatronMessage.body}}</h2>
+      <p>Welcome, I’m Erik a teacher turned project manager turned application developer. My passion is to create software that empowers users, enhances lives, and functions elegantly.</p>
+      <p>My background in education and IT project management provides the founation for this passion. My love of problem solving, and continuous learning keeps it fueled.</p>
     </mat-card-content>  
   </mat-card>
-
-  <mat-card class='image-card' *ngFor="let tile of tiles"
-  (click)="openDialog()"
-  matTooltip="Click to see more"
-  [matTooltipPosition]="'above'">
-  <h2>{{tile.text.heading}}</h2>
-  <img mat-card-image class="card-image" [src]="tile.imgSrc"/>
+  <div *ngFor="let tile of tiles" class='card image-card'>
+    <mat-card
+    *ngIf = "!tile.routeExternal" 
+    matTooltip="Click to see more"
+    [matTooltipPosition]="'above'">
+      <mat-card-content>
+        <h2>{{tile.text.heading}}</h2>
+        <img mat-card-image class="card-image" [src]="tile.imgSrc" [routerLink]="tile.route" routerLinkActive="active"/>
+        <p>{{tile.text.body}}</p> 
+      </mat-card-content>  
   </mat-card>
+
+    <a *ngIf = "tile.routeExternal" [href]="tile.route" target="_blank">
+      <mat-card
+      matTooltip="Click to see more"
+      [matTooltipPosition]="'above'">
+        <mat-card-content>
+          <h2>{{tile.text.heading}}</h2>
+          <img mat-card-image class="card-image" [src]="tile.imgSrc"/>
+          <p>{{tile.text.body}}</p>
+        </mat-card-content>
+      </mat-card>
+    </a>
+  </div>
+
 </div>
 
 

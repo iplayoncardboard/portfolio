@@ -13,14 +13,10 @@ export class LandingPageComponent implements OnInit {
 
   gigatronMessage: SimpleMessage = {
     heading: 'Application Developer, Agile Enthusiast, Game Master',
-    body: 'I\'m great at it'
+    body: ''
   };
 
   tiles: TileCard[] = cardListData;
-
-  openDialog(){
-    console.log('OPEN DIALOG');
-  }
 
   ngOnInit(): void {
   }
