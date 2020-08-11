@@ -1,8 +1,4 @@
-<mat-grid-list cols="6" >
-    <mat-grid-tile
-    [colspan]="6"
-    [rowspan]="2"
-    >
+<div class="card-container">
       <mat-card class="work-card" *ngFor="let project of projects">
         <mat-card-header>
           <mat-card-title>{{project.title}}</mat-card-title>
@@ -20,5 +16,4 @@
           </ul>
       </mat-card-content>
       </mat-card>
-  </mat-grid-tile>
-  </mat-grid-list>
+    </div>

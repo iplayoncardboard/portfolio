@@ -15,7 +15,7 @@ export interface SimpleMessage {
 
 export interface WorkCard {
     title: string;
-    contributions: string[  ];
+    contributions: string[];
     techUsed: tech[];
     description: string;
     imageUrl: string;

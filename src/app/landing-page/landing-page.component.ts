@@ -21,6 +21,7 @@ export class LandingPageComponent implements OnInit {
   openDialog(){
     console.log('OPEN DIALOG');
   }
+
   ngOnInit(): void {
   }
 }
