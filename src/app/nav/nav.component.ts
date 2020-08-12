@@ -7,7 +7,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   @Output() toggleContact: EventEmitter<any> = new EventEmitter<any>();
-  title = 'Portfolio';
+  title = 'Erik C Hurst';
   constructor() { }
 
   ngOnInit(): void {
